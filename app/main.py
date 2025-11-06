@@ -8,6 +8,7 @@ def copy_file(command: str) -> None:
 
     if source == target:
         return
+
     try:
         with (open(source, "r") as file_in,
               open(target, "w") as file_out):
